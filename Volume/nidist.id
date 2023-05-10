@@ -1,0 +1,10 @@
+[Volume Id]
+DistributionGUID={2EBAC261-5512-4C97-A0CF-83FF464EC661}
+DistPackageGUID={BED143BE-6BC0-4F91-A2B2-A9B95EDB9900}
+DistributionVersion=1.0.93
+DistributionType=MDF
+DistributionLanguage=12
+Volume=1
+TotalNumberOfVolumesInDistribution=1
+ExePath=setup.exe
+UpdateInfoFile=supportfiles\updateInfo.xml
