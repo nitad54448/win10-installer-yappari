@@ -38,13 +38,6 @@ This command allows the user to select the method used for nonlinear fitting. Th
 
 For TRDL and Constrained LM, the fit is constrained to certain intervals. For example, resistors are limited to the range of 1 mOhm to 1 GOhm, capacitors are between 10^-4 and 10^-14, and so on. It is recommended to start with TRDL and then make a final fit with the standard (unconstrained) LM method.
 
-### Weight
-This command selects the weight used for fitting, there are four possibilities:
-Z
-Zr
-Zi
-Equal
-
 ### Action
 
 This regroups a number of small functions that you can select :
@@ -67,7 +60,7 @@ This command will help an (old) pdf file. Better look at this Readme.md file whi
 No need for explications on what this command does.
 
 #### Zr, -Zi
-This panel shows a Nyquist plot, which is a standard way to visualize impedance data. The scale on the graph will adjust automatically based on the data. However, if you want to manually set a specific range, you can disable the Auto-axis feature by clicking on the graph. Additionally, you have the option to add markers for specific frequencies, and you can even move them around on the graph using the Details panel.
+This panel shows a Nyquist plot, which is a standard way to visualize impedance data. The scale on the graph will adjust automatically based on the data. However, if you want to manually set a specific range, you can disable the Auto-axis feature by clicking on the graph. 
 
 #### Zr, Zi, Z/phi
 These panels will show the dependency of impedances (real, imaginary or modulus) as a function of frequency and the differences between the calculated and experimental values (if any).
