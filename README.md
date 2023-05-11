@@ -3,7 +3,7 @@
 
 ![image](https://user-images.githubusercontent.com/80171481/233996948-d8085a78-65ee-47cc-b291-95b75b5f60d1.png)
 
-__10 may 2023__
+__11th of may 2023__
 
 # YAPPARI 
 YAPPARI stands for _**Y**et **A**nother **P**rogram for **An**alysis and **R**esearch in **I**mpedance_.
@@ -15,8 +15,16 @@ YAPPARI is designed to simulate or fit the impedance spectrum of simple circuits
 
 ## Main window
 
-### Open File
-This command reads a three-column ASCII file, which should be separated by tabs and contain frequency in Hz, Zr, and Zi. It is important to note that for French users (and some others), the separator value should be a dot “.” and not a comma “,”. If the reading is successful, the data will be plotted.
+### Read Data
+This command selects the file format where to read the data. As of now there are three possibilities :
+
+a) __3 cols tabs__ reads a three-column ASCII file, which should be separated by tabs and contain frequency in Hz, Zr, and Zi. It is important to note that for French users (and some others), the separator value should be a dot “.” and not a comma “,”. If the reading is successful, the data will be plotted.
+
+b) __Z view txt__ reads a file saved in a Z view format by the MFLI/MFIA lock in amplifier. I have no ideea if this is the valid Zview file format
+
+c) __MFLI csv__ reads the impedance data from an IMPS file saved by MFIA or MFLI
+
+For the MFLI/MFIA users : only the first data set found in the txt or csv file will be read. Remember to save the data you want to analyze, Auto Save will append data to file.
 
 ### Fit
 This command is used to fit a set of parameters given that there are some data and a valid circuit (i.e., there are parameters to fit on the right side of the window). The user can select which parameters to fit and it is recommended to start with a few parameters first, ensuring that the initial values are close to the expected values. The simulated spectrum will be updated with every change in the parameters, and the user can perform manual adjustments as necessary.
