@@ -45,13 +45,23 @@ Zr
 Zi
 Equal
 
-### Report
-This command generates an HTML report containing information about the model used, the parameters used, the fitted parameters, and their standard deviation. It also includes images of the fit as well as all experimental and calculated data. The report is saved in your temporary directory and automatically opened in a browser. You can use the data in the report to create your own graphs or to check for any discrepancies. If you find any errors in the calculations, please report them so they can be corrected.
+### Action
 
-### Save sim
+This regroups a number of small functions that you can select :
+
+#### Save sim
 This command allows you to save the simulated data to a file in a specific format. The format is three columns separated by tabs, with frequency in Hz, Zr, and Zi. This is useful for simulating impedance spectra for a given model. 
 If no data were previously read, the program will use 100 frequency points ranging from 10 mHz to 1 MHz in log spacing. However, if you read an experimental data file, the simulation of the impedance spectrum will only be made at the frequencies read from your data file. 
 It's important to note that if you have both experimental and simulated data, using the Report command might be a better choice since it allows you to see both the calculated and experimental data together.
+
+#### Report
+This command generates an HTML report containing information about the model used, the parameters used, the fitted parameters, and their standard deviation. It also includes images of the fit as well as all experimental and calculated data. The report is saved in your temporary directory and automatically opened in a browser. You can use the data in the report to create your own graphs or to check for any discrepancies. If you find any errors in the calculations, please report them so they can be corrected.
+
+#### Clear model
+This command will clear the model page (instead of erasing each element one by one).
+
+#### Help
+This command will help an (old) pdf file. Better look at this Readme.md file which is updated more regularly.
 
 ### Exit
 No need for explications on what this command does.
@@ -114,17 +124,10 @@ On the right side of the screen, you can see names such as 2MR1D, 2MQ2D, 2MN2D, 
 
 Overall, the notation is quite straightforward once you become familiar with the conventions used.
 
-#### Save sim
-The "Save Sim" command allows you to save the impedance spectrum data calculated by the software in a file. This can be useful if you want to use the data for further analysis or visualization.
-In addition to the "Save Sim" command, there is also a report page that generates a HTML file. This report includes not only the calculated data but also the reports of the fitted values. This means that you can see the parameter values that were used to generate the impedance spectrum, as well as any statistics or other relevant information about the fitting process. The report can be a helpful tool for understanding the quality of the fit and for identifying any areas where improvements could be made.
-
 #### Details
 In this panel the last values for R2 and chi2 are listed. The values for R2 and chi2 are important metrics for determining the quality of the fit. R2 is the coefficient of determination, which gives an indication of how well the model fits the data. A value of 1 indicates a perfect fit, while lower values indicate poorer fits. Chi2, or the chi-squared statistic, is another measure of how well the model fits the data, but it takes into account the number of data points and parameters in the model. These values, together with standard error for parameters are also printed with the Report command.
 
 You can also show markers at given frequencies listed in the Values table; by Source I mean you mark the calculated frequency or the experimental one. The precision gives the number of digits shown in the graphic. Note that you can drag the text, as well as the marker (albeit there is no use for this later). The markers are listed only in the Nyquist plot.
-
-#### About
-Brief help listing the version of the program. The button “more” will open this pdf file.
 
 ### Author
 This program can be used freely and distributed according to CC-BY-NC-SA.
