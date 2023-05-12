@@ -42,10 +42,16 @@ For TRDL and Constrained LM, the fit is constrained to certain intervals. For ex
 
 This regroups a number of small functions that you can select :
 
+#### Save data
+You can save the data you read from another file in a more readable three columns ASCII separated by Tabs.
+
 #### Save sim
 This command allows you to save the simulated data to a file in a specific format. The format is three columns separated by tabs, with frequency in Hz, Zr, and Zi. This is useful for simulating impedance spectra for a given model. 
 If no data were previously read, the program will use 100 frequency points ranging from 10 mHz to 1 MHz in log spacing. However, if you read an experimental data file, the simulation of the impedance spectrum will only be made at the frequencies read from your data file. 
 It's important to note that if you have both experimental and simulated data, using the Report command might be a better choice since it allows you to see both the calculated and experimental data together.
+
+#### Save all
+Saves all the data in memory, including absolute values and phases, for making better graphs if needed.
 
 #### Report
 This command generates an HTML report containing information about the model used, the parameters used, the fitted parameters, and their standard deviation. It also includes images of the fit as well as all experimental and calculated data. The report is saved in your temporary directory and automatically opened in a browser. You can use the data in the report to create your own graphs or to check for any discrepancies. If you find any errors in the calculations, please report them so they can be corrected.
