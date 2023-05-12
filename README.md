@@ -3,13 +3,13 @@
 
 ![image](https://user-images.githubusercontent.com/80171481/233996948-d8085a78-65ee-47cc-b291-95b75b5f60d1.png)
 
-__11th of may 2023__
+__12th of may 2023__
 
 # YAPPARI 
 YAPPARI stands for _**Y**et **A**nother **P**rogram for **An**alysis and **R**esearch in **I**mpedance_.
 This file is referenced as [http://dx.doi.org/10.13140/RG.2.2.15160.83200](http://dx.doi.org/10.13140/RG.2.2.15160.83200)
 
-If you are using Windows 10, you can download and install YAPPARI from this page (Select **Code** then **Download zip**). A version compiled in Labview 2018 can also be found in one of my repositories [here](https://github.com/nitad54448/yappari). The difference between them is that on some processors without SSE2 instructions set, only the LV2022 will work.
+If you are using Windows 10, you can download and install YAPPARI from this page (Select **Code** then **Download zip**). This version was compiled with  A version compiled in Labview 2018 on some processors without SSE2 instructions set, only version compiled with LV2022 will work. Make a request if you need such a version.
 
 YAPPARI is designed to simulate or fit the impedance spectrum of simple circuits and is primarily intended for educational purposes. This help file provides a brief introduction to the program. You are welcome to customize the help_YAPPARI.pdf for your own use or for other users. If you wish to contribute to the file feel free to modify it here.
 
@@ -18,13 +18,13 @@ YAPPARI is designed to simulate or fit the impedance spectrum of simple circuits
 ### Read Data
 This command selects the file format where to read the data. As of now there are three possibilities :
 
-a) __3 cols tabs__ reads a three-column ASCII file, which should be separated by tabs and contain frequency in Hz, Zr, and Zi. It is important to note that for French users (and some others), the separator value should be a dot “.” and not a comma “,”. If the reading is successful, the data will be plotted.
+a) __3 cols tabs__ reads a three-column ASCII file, which should be separated by tabs and contain frequency in Hz, Zr, and Zi. It is important to note for French users (and some others), the separator value should be a dot “.” and not a comma “,”. If the reading is successful, the data will be plotted.
 
 b) __Z view txt__ reads a file saved in a Z view format by the MFLI/MFIA lock in amplifier. I have no ideea if this is the valid Zview file format
 
 c) __MFLI csv__ reads the impedance data from an IMPS file saved by MFIA or MFLI
 
-For the MFLI/MFIA users : only the first data set found in the txt or csv file will be read. Remember to save the data you want to analyze, Auto Save will append data to file.
+For the MFLI/MFIA users : the Zview txt and MFLI files may contain several data sets, if you have selected AutoSave and run continuously several acqusitions. If this is the case the program will ask which data set you want to read.
 
 ### Fit
 This command is used to fit a set of parameters given that there are some data and a valid circuit (i.e., there are parameters to fit on the right side of the window). The user can select which parameters to fit and it is recommended to start with a few parameters first, ensuring that the initial values are close to the expected values. The simulated spectrum will be updated with every change in the parameters, and the user can perform manual adjustments as necessary.
@@ -49,9 +49,6 @@ It's important to note that if you have both experimental and simulated data, us
 
 #### Report
 This command generates an HTML report containing information about the model used, the parameters used, the fitted parameters, and their standard deviation. It also includes images of the fit as well as all experimental and calculated data. The report is saved in your temporary directory and automatically opened in a browser. You can use the data in the report to create your own graphs or to check for any discrepancies. If you find any errors in the calculations, please report them so they can be corrected.
-
-#### Clear model
-This command will clear the model page (instead of erasing each element one by one).
 
 #### Help
 This command will help an (old) pdf file. Better look at this Readme.md file which is updated more regularly.
