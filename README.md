@@ -54,6 +54,8 @@ The elements used now (as of march 2023) are: Resistor, Capacitor, Inductor, CPE
 
 Warburg "infinite" diffusion coefficient s is expressed here as:
 
+$(Zw= sw^-1/2 -j w^-1/2)$
+
 The parameters obtained for Warburg in other programs are typically by fitting a CPE with n=0.5, you will get the same result but the Q parameter obtained is
  
 
