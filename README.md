@@ -1,14 +1,14 @@
-# win10-installer-yappari-4.2
-latest installer
+## win10-installer-yappari-4.2
+**latest installer**
 
 YAPPARI stands for Yet Another Program for Analysis and Research in Impedance.
 This file is referenced as http://dx.doi.org/10.13140/RG.2.2.15160.83200
 
-If you are using Windows 10, you can download and install YAPPARI from tis page or look for a more advanced, multiple dataset, called Yappari 5, here on Github in one of my repositories.
+If you are using Windows 10, you can download and install YAPPARI from this page or if you look for a more advanced, multiple dataset, I made a version called Yappari 5, available here on Github in one of my repositories.
 
 YAPPARI is designed to simulate or fit the impedance spectrum of simple circuits and is primarily intended for educational purposes. This help file provides a brief introduction to the program. You are welcome to contribute to the file, you can send it to me or fork it on Github.
 
-Main window
+###Main window###
 
 Open File
 This command reads a three-column ASCII file, which should be separated by tabs and contain frequency in Hz, Zr, and Zi. It is important to note that for French users (and some others), the separator value should be a dot “.” and not a comma “,”. If the reading is successful, the data will be plotted.
