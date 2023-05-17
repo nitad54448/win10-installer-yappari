@@ -2,7 +2,7 @@
 **latest installer**
 
 YAPPARI stands for Yet Another Program for Analysis and Research in Impedance.
-This file is referenced as http://dx.doi.org/10.13140/RG.2.2.15160.83200
+This program can be referenced in publications as http://dx.doi.org/10.13140/RG.2.2.15160.83200
 
 If you are using Windows 10, you can download and install YAPPARI from this page or if you look for a more advanced, multiple dataset, I made a version called Yappari 5, available here on Github in one of my repositories.
 
