@@ -61,10 +61,12 @@ The parameters obtained for Warburg in other programs are typically by fitting a
 $s=1/(Q sqrt(2))$
 
 The Warburg "open" describes the impedance of a finite-length diffusion with reflective boundary.  The formula used here is
-Zo=Aw/(sqrt(jw)) coth(B sqrt(jw))
+
+$Zo=Aw/(sqrt(jw)) coth(B sqrt(jw))$
 
 The Warburg "short" describes the impedance of a finite-length diffusion with transmissible boundary, with the expression:
- 
+
+$Zws=Aw/(sqrt(jw)) tanh(B sqrt(jw))
 
 Some others can be added upon request, if I will have the time and if there is an interest for it.
 
@@ -75,20 +77,10 @@ Once the circuit is valid, you can see a list of all the parameters for each ele
 When you add a parallel RQ element to the first element of the circuit (a Zarc as element 0), you need to create "electrical contacts" in the next three elements (elements 1, 2, and 3, or 4,5 and 6, or 7, 8 and 9….) for the circuit to be complete. 
 Otherwise, the circuit will be open and no impedance can be calculated. In other words, all the elements of the circuit need to be properly connected for the circuit to be valid and for impedance calculations to be performed.
 
- 
+If the circuit is not closed no calculation can be made. Let’s make a valid circuit, with a Zarc and three shorts. As the circuit is valid, with a Zarc in element 0 position, three parameters will appear in the tab of the right side of the panel: 0ZARR, 0ZARQ and 0ZARN; the names are rather self-explaining for the parameters describing a Zarc located in the position 0 of the circuit, with the three parameters describing a parallel RQ. You can use a RQ element and fix the N to 1 to obtain the equivalent RC circuit. The equivalent capacitance for a RQ circuit is C=((RQ)^1/n)/R.
 
-In the above figure you may notice the top left indicator, Valid, as OFF. The circuit is not closed so no calculation can be made. Let’s make a valid circuit, as here: 
-
-Now, as the circuit is valid, with a Zarc in element 0 position, three parameters will appear in the tab of the right side of the panel: 0ZARR, 0ZARQ and 0ZARN; the names are rather self-explaining for the parameters describing a Zarc located in the position 0 of the circuit, with the three parameters describing a parallel RQ. You can use a RQ element and fix the N to 1 to obtain the equivalent RC circuit. The equivalent capacitance for a RQ circuit is C=((RQ)^1/n)/R.
-
-The program will calculate the impedance spectra of a circuit with the values listed in the right side tab, for this case we get 
- 
-You can use the wheel of the mouse to evaluate the change in the output impedance in real time.
-
-For a more complex circuit, like in the following image:
-
- 
-On the right side of the screen, you can see names such as 2MR1D, 2MQ2D, 2MN2D, 2MR3D, 2MR4D, 2MR5D, and 2MW6D. The first number, "2", indicates which element case the device is in. 
+The program will calculate the impedance spectra of a circuit with the values listed in the right side tab. You can use the wheel of the mouse to evaluate the change in the output impedance in real time.
+For a more complex circuit, you can find on the right side of the screen names such as 2MR1D, 2MQ2D, 2MN2D, 2MR3D, 2MR4D, 2MR5D, and 2MW6D. The first number, "2", indicates which element case the device is in. 
 
 The letters "M" and "D" are internal notations that are used by the program to identify the device type, but they are not important for the user. The type of device is listed after the "M" notation, such as "R" for resistor or "W" for Warburg. 
 
@@ -96,19 +88,14 @@ The numbering of the devices goes from left to right and top to bottom. For exam
 
 Overall, the notation is quite straightforward once you become familiar with the conventions used.
 
-Save sim
+### Save sim ###
 The "Save Sim" command allows you to save the impedance spectrum data calculated by the software in a file. This can be useful if you want to use the data for further analysis or visualization.
 In addition to the "Save Sim" command, there is also a report page that generates a HTML file. This report includes not only the calculated data but also the reports of the fitted values. This means that you can see the parameter values that were used to generate the impedance spectrum, as well as any statistics or other relevant information about the fitting process. The report can be a helpful tool for understanding the quality of the fit and for identifying any areas where improvements could be made.
 
-Details
-In this panel the last values for R2 and chi2 are listed. The values for R2 and chi2 are important metrics for determining the quality of the fit. R2 is the coefficient of determination, which gives an indication of how well the model fits the data. A value of 1 indicates a perfect fit, while lower values indicate poorer fits. Chi2, or the chi-squared statistic, is another measure of how well the model fits the data, but it takes into account the number of data points and parameters in the model. These values, together with standard error for parameters are also printed with the Report command. 
-
-You can also show markers at given frequencies listed in the Values table; by Source I mean you mark the calculated frequency or the experimental one. The precision gives the number of digits shown in the graphic. Note that you can drag the text, as well as the marker (albeit there is no use for this later). The markers are listed only in the Nyquist plot.
-
-About
+### About ###
 Brief help listing the version of the program. The button “more” will open this pdf file.
 
-Author
+### Author ###
 This program can be used freely and distributed according to CC-BY-NC-SA.
 It was written in Labview and it includes the JKI toolkits for Labview, © 2018, JKI. All rights reserved.
 
