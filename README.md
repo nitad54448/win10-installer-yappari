@@ -5,7 +5,7 @@ YAPPARI stands for Yet Another Program for Analysis and Research in Impedance.
 This program can be referenced in publications as http://dx.doi.org/10.13140/RG.2.2.15160.83200
 
 If you are using Windows 10, you can download and install YAPPARI from this page or if you look for a more advanced, multiple dataset, I made a version called [Yappari 5](https://github.com/nitad54448/yappari-5-1).
-I advise you download the newer program, 5.1, this one is not maintained anymore.
+I advise you to download the newer program, 5.1, this one is not maintained anymore.
 
 YAPPARI is designed to simulate or fit the impedance spectrum of simple circuits and is primarily intended for educational purposes. This help file provides a brief introduction to the program. You are welcome to contribute to the file, you can send it to me or fork it on Github.
 
